@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', 'sans-serif';
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-6">
+    <div class="text-center p-10 bg-gray-800 shadow-2xl rounded-lg max-w-2xl w-full border border-gray-700">
+        
+        <!-- Large 404 Text -->
+        <div class="text-9xl font-extrabold text-indigo-500 mb-4 animate-float">404</div>
+        
+        <!-- Creative Subheading -->
+        <h2 class="text-4xl font-bold mb-3">Oops! You're Lost in Space.</h2>
+        
+        <!-- Helpful Message -->
+        <p class="text-lg text-gray-300 mb-8">
+            The page you're looking for seems to have drifted off into another galaxy.
+            Let's get you back to solid ground.
+        </p>
+        
+        <!-- Navigation back home -->
+        <a href="/" 
+           class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+           ← Go Back Home
+        </a>
+
+        <!-- Footer with Email -->
+        <footer class="mt-10 pt-6 border-t border-gray-700">
+            <p class="text-sm text-gray-400">
+                If you believe this is an error, please contact: 
+                <a href="mailto:22f1000091@ds.study.iitm.ac.in" class="text-indigo-400 hover:underline">22f1000091@ds.study.iitm.ac.in</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
